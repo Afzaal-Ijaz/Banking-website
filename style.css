@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --primary-text-color:#183b56;
+    --secondary-text-color:#577592;
+    --accent-color:#2294ed;
+    --accent-dark-color:#1d69a3;
+}
+
+body{
+    font-weight: 300;
+    font-family: 'Roboto',  sans-serif;
+    color: var(--primary-text-color);
+}
+
+h1{
+    font-family:'Poppins',Arial;
+    font-size: 3rem;
+}
+
+h2{
+    font-family: 'Poppins',Arial;
+    font-size: 2rem;
+}
+
+h3{
+    font-family: 'Poppins',Arial;
+    font-size: 1.4rem;
+}
+
+p{
+    font-size: 1.25rem;
+    color: var(--secondary-text-color);
+    line-height: 1.6rem;
+}
+
+a{
+    text-decoration: none;
+    display: inline-block;
+    color: var(--primary-text-color);
+    font-weight: 600;
+}
+
+ul{
+    list-style: none;
+}
+
+
+.banner{
+    background-color: aqua;
+}
+
+/* utility classes */
+
+.small-text{
+    font-size: 1rem;
+    font-weight: 400 !important;
+    text-align: center;
+    padding: 10px;
+}
+
+.container{
+    max-width: 1180px;
+    margin-inline: auto;
+    padding-inline: 20px;
+    overflow: hidden;
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+}
+
+.primary-btn{
+    color: white;
+    background-color: var(--accent-color);
+    border: 0.5px solid;
+    border-radius: 10px;
+    padding: 15px 20px;
+    transition: 0.5s ease-in;
+}
+
+.primary-btn:hover{
+    background-color: var(--accent-dark-color);
+}
+
+.secondary-btn{
+    color: black;
+    border: 0.5px solid black;
+    border-radius: 10px;
+    padding: 15px 20px;
+    font-weight: 400 !important;
+}
+
+
+/* navber styling */
+.navbar{
+    justify-content: space-between;
+    margin-top: 20px;
+    padding-bottom:10px ;
+}
+
+.logo{
+    color: rgb(232, 70, 70);
+}
+
+.nav-links ul{
+    gap: 20px;
+}
+.nav-toggle{
+    display: none;
+}
+
+/* hero-section */
+.hero-section{
+    margin-top: 20px;
+    gap: 40px;
+}
+
+.hero-text{
+    max-width: 40vw;
+}
+
+.hero-text span{
+    color: rgb(232, 70, 70);
+    font-size: larger;
+}
+
+.hero-img img{
+    width: 100%;
+}
+
+.account-btn{
+    margin-top: 20px;
+    font-weight: 600;
+}
+
+.local-branch{
+    font-weight: 600;
+}
+/* partners */
+
+.partners{
+    flex-wrap: wrap;
+    gap: 30px;
+}
+.p-logo{
+    justify-content: space-evenly;
+    width: 130px;
+}
+  /* services */
+.services{
+    margin-top: 50px;
+}
+.service-heading{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.services-area{
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 20px;
+}
+.service-card {
+    flex-direction: column;
+    gap: 10px;
+    max-width: 30%;
+    text-align: center;
+}
+
+.service-pic{
+    width: 150px;
+    height: 150px;
+}
+.learn-btn:hover{
+    background: var(--accent-color);
+    transition: 0.5s ease-in;
+}
+
+/* features */
+.features{
+    padding: 60px 10px 0;
+    
+}
+.features h2{
+    text-align: center;
+}
+.feature{
+    justify-content: space-around;
+    margin: 60px 10px 0;
+}
+.fea-txt{
+    width: 50%;
+}
+.fea-img img{
+    width: 300px;
+}
+/* examples */
+.examples{
+    margin-block: 30px;
+    gap: 30px;
+}
+.example-card{
+    width: 30%;
+    min-height: 400px;
+    position: relative;
+    border: 0.5px solid black;
+    background-image: url(images/car-loan.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+.example-card:nth-child(2){
+    background-image: url(images/Finance.png);
+    background-position: center;
+}
+
+.example-card:nth-child(3){
+    background-image: url(images/gift_card\ \(1\).png);
+    background-size: cover;
+}
+
+.example-card h3{
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}
+.shade{
+    width: 100%;
+    height: 400px;
+    background: linear-gradient( rgb(255, 255, 255),rgb(0, 0, 10));
+    opacity: 0.4;
+}
+.e-txt{
+    text-align: center;
+}
+/* footer-section */
+footer{
+    background-color: var(--accent-color);
+}
+.footer-area{
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+#footer-logo{
+    color: red;
+}
+
+.last-txt {
+    justify-content: center;
+    background-color: aqua;
+    gap: 30px;
+}
